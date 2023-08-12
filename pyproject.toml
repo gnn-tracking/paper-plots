@@ -29,7 +29,9 @@ classifiers = [
   "Typing :: Typed",
 ]
 dynamic = ["version"]
-dependencies = []
+dependencies = [
+  "SciencePlots"
+]
 
 [project.optional-dependencies]
 test = [
