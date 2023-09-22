@@ -30,7 +30,10 @@ class Plot:
             _, ax = plt.subplots()
         self.ax = ax
         add_watermark(self.ax, watermark)
-        self.ax.set_title(f"{model=}")
+        title = ""
+        if model:
+            title += f"{model=}"
+        self.ax.set_title(title)
 
     def add_legend(self):
         self.ax.legend()
