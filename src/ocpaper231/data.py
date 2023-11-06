@@ -8,15 +8,16 @@ from gnn_tracking.utils.loading import TrackingDataModule
 def get_dm(*, n_val=5, setup=True) -> TrackingDataModule:
     """Get default tracking data module"""
     dm = TrackingDataModule(
+        identifier="point_clouds_v8",
         train={
             "dirs": [
-                "/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v6/part_1/"
+                "/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_1/"
             ],
             # If you run into memory issues, reduce this
         },
         val={
             "dirs": [
-                "/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v6/part_9/"
+                "/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_9/"
             ],
             "stop": n_val,
         },
