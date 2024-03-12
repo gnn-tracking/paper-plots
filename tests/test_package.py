@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import ocpaper231 as m
 
 

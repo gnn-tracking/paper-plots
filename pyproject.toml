@@ -141,7 +141,7 @@ unfixable = [
 ]
 exclude = []
 flake8-unused-arguments.ignore-variadic-names = true
-isort.required-imports = ["from __future__ import annotations"]
+isort.required-imports = [""]
 # Uncomment if using a _compat.typing backport
 # typing-modules = ["ocpaper231._compat.typing"]
 
