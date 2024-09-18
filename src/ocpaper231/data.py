@@ -17,7 +17,9 @@ def get_dm(*, n_val=5, setup=True, v=8) -> TrackingDataModule:
             "dirs": [
                 f"/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v{v}/part_9/"
             ],
-            "stop": n_val,
+            # make sure to exclude the validation set from the test set
+            "start": 5,
+            "stop": 5 + n_val,
         },
     )
     if setup:
